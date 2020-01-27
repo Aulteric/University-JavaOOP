@@ -12,7 +12,10 @@ public class ChessBoard {
 
     public void Move( int OldRow, int OldCol, int NewRow, int NewCol ){
         board[NewRow][NewCol] = board[OldRow][OldCol];
-        board[OldRow][OldCol] = null;
+        RemovePiece(NewRow,NewCol);
+    }
+    public void RemovePiece(int Row, int Col ){
+        board[Row][Col] = null;
     }
 
     public boolean isPieceAt(int row, int col) {

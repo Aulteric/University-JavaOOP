@@ -11,6 +11,12 @@ public abstract class ChessPiece {
 
 
     }
+    public boolean ValidateInput(int NewRow, int NewCol ){
+        if (NewCol>=0&& NewRow >=0&&NewCol<8 && NewRow<8 ){
+            return true;
+        }
+        return false;
+    }
     public boolean ValidateInput(int OldRow, int OldCol, int NewRow, int NewCol ){
         if (OldCol >=0 && OldRow>=0 && OldCol <8 && OldRow<8 && NewCol>=0&& NewRow >=0&&NewCol<8 && NewRow<8 ){
             return true;

@@ -31,7 +31,6 @@ public class Rook extends ChessPiece implements Actions{
         if (OldCol == NewCol || OldRow == NewRow) {
             return true;
         }
-
         return false;
     }
 }
